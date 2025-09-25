@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Smith - Web Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background: #333;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            background-color: #555;
+        }
+        
+        .section {
+            background: white;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+        }
+        
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .skill-item {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .contact-item {
+            background: #e9ecef;
+            padding: 1rem;
+            border-radius: 6px;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav ul li {
+                margin: 0.2rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>John Smith</h1>
+            <p class="subtitle">Full-Stack Web Developer & UI/UX Designer</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Welcome to my personal website! I'm John Smith, a passionate full-stack web developer with over 5 years of experience creating innovative digital solutions. I specialize in modern web technologies and have a keen eye for user experience design.</p>
+            <p>When I'm not coding, you can find me hiking in the mountains, reading tech blogs, or experimenting with new programming languages. I believe in continuous learning and staying up-to-date with the latest industry trends.</p>
+        </section>
+        
+        <section id="skills" class="section">
+            <h2>Skills & Technologies</h2>
+            <div class="skills">
+                <div class="skill-item">
+                    <h3>Frontend</h3>
+                    <p>JavaScript, React, Vue.js, HTML5, CSS3, TypeScript</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Backend</h3>
+                    <p>Node.js, Python, Express.js, Django, REST APIs</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Database</h3>
+                    <p>MongoDB, PostgreSQL, MySQL, Redis</p>
+                </div>
+                <div class="skill-item">
+                    <h3>Tools & Others</h3>
+                    <p>Git, Docker, AWS, Linux, Agile/Scrum</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experience" class="section">
+            <h2>Professional Experience</h2>
+            <div style="margin-bottom: 1.5rem;">
+                <h3>Senior Web Developer - TechCorp Inc. (2021 - Present)</h3>
+                <p>Lead a team of 4 developers in building scalable web applications. Implemented microservices architecture that improved system performance by 40%. Mentored junior developers and established coding best practices.</p>
+            </div>
+            <div style="margin-bottom: 1.5rem;">
+                <h3>Full-Stack Developer - StartupXYZ (2019 - 2021)</h3>
+                <p>Developed and maintained multiple client-facing web applications using React and Node.js. Collaborated with designers to create responsive and user-friendly interfaces. Reduced page load times by 60% through optimization techniques.</p>
+            </div>
+            <div>
+                <h3>Junior Developer - WebSolutions LLC (2018 - 2019)</h3>
+                <p>Built custom WordPress themes and plugins for various clients. Gained experience in PHP, MySQL, and front-end technologies. Participated in code reviews and agile development processes.</p>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Get In Touch</h2>
+            <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p>john.smith@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>📱 Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div class="contact-item">
+                    <h3>🌐 LinkedIn</h3>
+                    <p>linkedin.com/in/johnsmith-dev</p>
+                </div>
+                <div class="contact-item">
+                    <h3>💻 GitHub</h3>
+                    <p>github.com/johnsmith-dev</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 John Smith. All rights reserved. | Built with HTML, CSS & ❤️</p>
+        </div>
+    </footer>
+</body>
+</html>
